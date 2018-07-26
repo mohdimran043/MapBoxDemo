@@ -166,6 +166,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="MapBoxDrawPolygon.aspx" />
     <Content Include="MapContent\countries\0\0\0.pbf" />
     <Content Include="MapContent\countries\1\0\0.pbf" />
     <Content Include="MapContent\countries\1\0\1.pbf" />
@@ -4928,6 +4929,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MapBoxDrawPolygon.aspx.cs">
+      <DependentUpon>MapBoxDrawPolygon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapBoxDrawPolygon.aspx.designer.cs">
+      <DependentUpon>MapBoxDrawPolygon.aspx</DependentUpon>
     </Compile>
     <Compile Include="MapMarker.aspx.cs">
       <DependentUpon>MapMarker.aspx</DependentUpon>
