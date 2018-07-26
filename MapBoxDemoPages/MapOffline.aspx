@@ -36,8 +36,6 @@
             "sources": {
                 "countries": {
                     "type": "vector",
-                    // "url": "mapbox://map-id"
-                    // "url": "http://tileserver.com/layer.json", 
                     "tiles": ["http://localhost:2022/MapContent/countries/{z}/{x}/{y}.pbf"],
                     "maxzoom": 6
                 }
@@ -268,12 +266,26 @@
 
         var map = new mapboxgl.Map({
             container: 'map',
-            center: [8.3221, 46.5928],
-            zoom: 1,
+            center: [51.1839, 25.3548],
+            zoom: 8,
             style: style
         });
 
-        map.addControl(new mapboxgl.Navigation());
+        map.addControl(new mapboxgl.NavigationControl());
+        map.addControl(new mapboxgl.FullscreenControl());
+
+        function addMarker(e) {
+
+            if (typeof circleMarker !== "undefined") {
+                map.removeLayer(circleMarker);
+            }
+            //add marker
+            circleMarker = new L.circle(e.latlng, 200, {
+                color: 'red',
+                fillColor: '#f03',
+                fillOpacity: 0.5
+            }).addTo(map);
+        }
 </script>
 
 </body>
