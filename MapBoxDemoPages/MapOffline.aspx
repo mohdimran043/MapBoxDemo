@@ -6,10 +6,10 @@
     <meta charset='utf-8' />
     <title>MapBox GL JS Offline Example</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <%--    <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />--%>
-    <script src='/MapContent/mapbox-gl.js'></script>
-    <link href='/MapContent/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+    <%-- <script src='/MapContent/mapbox-gl.js'></script>
+    <link href='/MapContent/mapbox-gl.css' rel='stylesheet' />--%>
     <style>
         body {
             margin: 0;
@@ -80,15 +80,6 @@
                     "line-opacity": 0.8,
                 }
                 // rainbow start
-            }, {
-                "id": "area-white",
-                "type": "fill",
-                "source": "countries",
-                "filter": ["in", "ADM0_A3", 'ATA'],
-                "source-layer": "country",
-                "paint": {
-                    "fill-color": "#F0F8FF"
-                }
             }, {
                 "id": "area-white",
                 "type": "fill",
