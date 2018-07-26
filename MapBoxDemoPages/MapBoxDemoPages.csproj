@@ -4872,6 +4872,7 @@
     <Content Include="MapContent\font\Open Sans Semibold\9984-10239.pbf" />
     <Content Include="MapContent\countries.json" />
     <Content Include="MapContent\mapbox-gl.js.map" />
+    <Content Include="Measure.aspx" />
     <Content Include="Plugin\EasyUI\jquery.easyui.min.js" />
     <Content Include="Plugin\EasyUI\themes\angular.css" />
     <Content Include="Plugin\EasyUI\themes\black\accordion.css" />
@@ -5431,6 +5432,13 @@
     </Compile>
     <Compile Include="MapOffline.aspx.designer.cs">
       <DependentUpon>MapOffline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Measure.aspx.cs">
+      <DependentUpon>Measure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Measure.aspx.designer.cs">
+      <DependentUpon>Measure.aspx</DependentUpon>
     </Compile>
     <Compile Include="PrintMapDemo.aspx.cs">
       <DependentUpon>PrintMapDemo.aspx</DependentUpon>
