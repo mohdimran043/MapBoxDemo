@@ -152,6 +152,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="ContextMenu.aspx" />
     <Content Include="CustomIcon.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -5412,6 +5413,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ContextMenu.aspx.cs">
+      <DependentUpon>ContextMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContextMenu.aspx.designer.cs">
+      <DependentUpon>ContextMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CustomIcon.aspx.cs">
       <DependentUpon>CustomIcon.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
