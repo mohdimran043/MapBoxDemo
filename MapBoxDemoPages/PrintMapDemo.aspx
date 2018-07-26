@@ -12,8 +12,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/canvas-toblob/0.1/canvas-toBlob.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/eligrey/FileSaver.js/1.3.3/FileSaver.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jspdf/1.3.4/jspdf.min.js"></script>
-
-
     <link href="/Style/Print/bootstrap.min.css" rel="stylesheet" />
     <style>
         body {
