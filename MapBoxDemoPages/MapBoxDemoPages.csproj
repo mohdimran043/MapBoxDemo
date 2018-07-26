@@ -147,12 +147,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Animation1.aspx" />
+    <Content Include="ColorLayer.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="ContextMenu.aspx" />
+    <Content Include="Coordinate.aspx" />
     <Content Include="CustomIcon.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -4876,7 +4878,14 @@
     <Content Include="MapContent\font\Open Sans Semibold\9984-10239.pbf" />
     <Content Include="MapContent\countries.json" />
     <Content Include="MapContent\mapbox-gl.js.map" />
+    <Content Include="MapLanguage.aspx" />
     <Content Include="Measure.aspx" />
+    <Content Include="Plugin\ContextMenu\jquery.contextMenu.css" />
+    <Content Include="Plugin\ContextMenu\jquery.contextMenu.js" />
+    <Content Include="Plugin\ContextMenu\jquery.contextMenu.min.css" />
+    <Content Include="Plugin\ContextMenu\jquery.contextMenu.min.js" />
+    <Content Include="Plugin\ContextMenu\jquery.ui.position.js" />
+    <Content Include="Plugin\ContextMenu\jquery.ui.position.min.js" />
     <Content Include="Plugin\EasyUI\jquery.easyui.min.js" />
     <Content Include="Plugin\EasyUI\themes\angular.css" />
     <Content Include="Plugin\EasyUI\themes\black\accordion.css" />
@@ -5322,6 +5331,12 @@
     <Content Include="Plugin\Ribbon\images\.DS_Store" />
     <Content Include="Plugin\EasyUI\themes\material-teal\images\Thumbs.db" />
     <Content Include="Plugin\EasyUI\themes\material\images\Thumbs.db" />
+    <Content Include="Plugin\ContextMenu\font\context-menu-icons.eot" />
+    <Content Include="Plugin\ContextMenu\font\context-menu-icons.ttf" />
+    <Content Include="Plugin\ContextMenu\font\context-menu-icons.woff" />
+    <Content Include="Plugin\ContextMenu\font\context-menu-icons.woff2" />
+    <Content Include="Plugin\ContextMenu\jquery.contextMenu.min.css.map" />
+    <Content Include="Plugin\ContextMenu\jquery.contextMenu.min.js.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="MapContent\font\src\mapboxgl-ctrl-zoom-in.svg" />
     <Content Include="MapContent\font\src\mapboxgl-ctrl-zoom-out.svg" />
@@ -5396,6 +5411,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Search.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Style\Print\bootstrap.min.css" />
     <Content Include="Style\Print\style.css" />
@@ -5413,12 +5429,26 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ColorLayer.aspx.cs">
+      <DependentUpon>ColorLayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ColorLayer.aspx.designer.cs">
+      <DependentUpon>ColorLayer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContextMenu.aspx.cs">
       <DependentUpon>ContextMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ContextMenu.aspx.designer.cs">
       <DependentUpon>ContextMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coordinate.aspx.cs">
+      <DependentUpon>Coordinate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coordinate.aspx.designer.cs">
+      <DependentUpon>Coordinate.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomIcon.aspx.cs">
       <DependentUpon>CustomIcon.aspx</DependentUpon>
@@ -5443,6 +5473,13 @@
     </Compile>
     <Compile Include="MapBoxDrawPolygon.aspx.designer.cs">
       <DependentUpon>MapBoxDrawPolygon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MapLanguage.aspx.cs">
+      <DependentUpon>MapLanguage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MapLanguage.aspx.designer.cs">
+      <DependentUpon>MapLanguage.aspx</DependentUpon>
     </Compile>
     <Compile Include="MapMarker.aspx.cs">
       <DependentUpon>MapMarker.aspx</DependentUpon>
@@ -5479,6 +5516,13 @@
     </Compile>
     <Compile Include="Ribbon.aspx.designer.cs">
       <DependentUpon>Ribbon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
