@@ -8,7 +8,7 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
-     <script src="/Scripts/MapSource.js"></script>
+    <script src="/Scripts/MapSource.js"></script>
     <%-- <script src='/MapContent/mapbox-gl.js'></script>
     <link href='/MapContent/mapbox-gl.css' rel='stylesheet' />--%>
     <style>
@@ -41,7 +41,12 @@
 
         map.addControl(new mapboxgl.NavigationControl());
         map.addControl(new mapboxgl.FullscreenControl());
-
+        map.addControl(new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true
+        }));
         function addMarker(e) {
 
             if (typeof circleMarker !== "undefined") {
