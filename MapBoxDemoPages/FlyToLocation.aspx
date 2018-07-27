@@ -53,11 +53,27 @@
                 border-bottom: none;
                 margin-bottom: 200px;
             }
+
+        #fly {
+            display: block;
+            position: relative;
+            margin: 0px auto;
+            width: 50%;
+            height: 40px;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            background: #ee8a65;
+        }
     </style>
 </head>
 <body>
 
     <div id='map'></div>
+    <button id='fly'>Fly</button>
     <div id='features'>
         <section id='baker' class='active'>
             <h3>221b Baker St.</h3>

@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Animation1.aspx" />
+    <Content Include="Circle.aspx" />
     <Content Include="ColorLayer.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -5339,6 +5340,7 @@
     <Content Include="Plugin\ContextMenu\font\context-menu-icons.woff2" />
     <Content Include="Plugin\ContextMenu\jquery.contextMenu.min.css.map" />
     <Content Include="Plugin\ContextMenu\jquery.contextMenu.min.js.map" />
+    <Content Include="App_Data\dots.csv" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="MapContent\font\src\mapboxgl-ctrl-zoom-in.svg" />
     <Content Include="MapContent\font\src\mapboxgl-ctrl-zoom-out.svg" />
@@ -5385,6 +5387,7 @@
     <Content Include="Ribbon.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Circle\Circle.js" />
     <Content Include="Scripts\MapSource.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -5431,6 +5434,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Circle.aspx.cs">
+      <DependentUpon>Circle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Circle.aspx.designer.cs">
+      <DependentUpon>Circle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ColorLayer.aspx.cs">
       <DependentUpon>ColorLayer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -5542,7 +5552,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
