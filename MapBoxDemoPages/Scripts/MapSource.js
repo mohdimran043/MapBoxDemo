@@ -1,4 +1,4 @@
-﻿var custommapstyle = {
+﻿var custommapstyle1 = {
     "version": 8,
     "sources": {
         "countries": {
