@@ -172,6 +172,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\carblack2.png" />
+    <Content Include="Images\pin.jpg" />
     <Content Include="MapBoxDrawPolygon.aspx" />
     <Content Include="MapContent\countries\0\0\0.pbf" />
     <Content Include="MapContent\countries\1\0\0.pbf" />

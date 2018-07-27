@@ -95,8 +95,9 @@
             el.style.width = marker.properties.iconSize[0] + 'px';
             el.style.height = marker.properties.iconSize[1] + 'px';
 
-            el.addEventListener('click', function () {
+            el.addEventListener('click', function (e) {
                 window.alert(marker.properties.message);
+                e.stopImmediatePropagation();
             });
 
             // add marker to map
@@ -106,6 +107,26 @@
         });
         map.addControl(new mapboxgl.NavigationControl());
         map.addControl(new mapboxgl.FullscreenControl());
+
+
+        map.on('click', function (e) {
+           
+            var el = document.createElement('div');
+            el.className = 'marker';
+            el.style.backgroundImage = 'url(http://localhost:2022/Images/pin.jpg)';
+            el.style.width = 35 + 'px';
+            el.style.height = 30 + 'px';
+
+            //el.addEventListener('click', function (iconevent) {
+            //    window.alert(123);
+            //    iconevent.stopImmediatePropagation();
+            //});
+
+            // add marker to map
+            new mapboxgl.Marker(el)
+                .setLngLat(e.lngLat)
+                .addTo(map);
+        });
 </script>
 
 </body>
