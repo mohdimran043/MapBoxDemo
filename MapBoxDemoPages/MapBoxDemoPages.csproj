@@ -161,6 +161,8 @@
     <Content Include="favicon.ico" />
     <Content Include="FlyToLocation.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GeoLine.aspx" />
+    <Content Include="GeoLineWithArrow.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -5482,6 +5484,20 @@
     </Compile>
     <Compile Include="FlyToLocation.aspx.designer.cs">
       <DependentUpon>FlyToLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeoLine.aspx.cs">
+      <DependentUpon>GeoLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeoLine.aspx.designer.cs">
+      <DependentUpon>GeoLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeoLineWithArrow.aspx.cs">
+      <DependentUpon>GeoLineWithArrow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeoLineWithArrow.aspx.designer.cs">
+      <DependentUpon>GeoLineWithArrow.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
